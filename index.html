@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fineworks Final</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- General Sans via Fontshare -->
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="overflow-hidden">
+  <svg class="hidden" width="0" height="0">
+    <defs></defs>
+  </svg>
+
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="preloader-logo-char">F</span>
+        <span class="preloader-logo-char">I</span>
+        <span class="preloader-logo-char">N</span>
+        <span class="preloader-logo-char">E</span>
+        <span class="preloader-logo-char">W</span>
+        <span class="preloader-logo-char">O</span>
+        <span class="preloader-logo-char">R</span>
+        <span class="preloader-logo-char">K</span>
+        <span class="preloader-logo-char">S</span>
+      </div>
+      <div class="preloader-line"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-logo header-item">FINEWORKS</div>
+    <div class="header-slogan header-item">
+      <span class="slogan-static">Kurumsal</span>
+      <span class="slogan-word-wrap">
+        <span class="slogan-word">üretim</span>
+      </span>
+      <span class="slogan-static">çözümleri</span>
+    </div>
+    <div class="header-menu header-item">
+      <span class="header-menu-text">MENU</span>
+      <div class="header-menu-icon" aria-label="Menü">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-overlay">
+    <button class="nav-close" aria-label="Kapat">
+      <span class="nav-close-line"></span>
+      <span class="nav-close-line"></span>
+    </button>
+    <div class="nav-inner">
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link active">Anasayfa</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Kurumsal</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Çözümler</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Projeler</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Referanslar</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-contact">
+      <div class="nav-contact-group">
+        <span class="nav-contact-label">E-posta</span>
+        <a href="mailto:info@fineworks.com.tr" class="nav-contact-value">info@fineworks.com.tr</a>
+      </div>
+      <div class="nav-contact-group">
+        <span class="nav-contact-label">Telefon</span>
+        <a href="tel:+902121234567" class="nav-contact-value">+90 212 123 45 67</a>
+      </div>
+      <div class="nav-contact-group">
+        <span class="nav-contact-label">Adres</span>
+        <span class="nav-contact-value">İstanbul, Türkiye</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="smooth-wrapper">
+    <div id="smooth-content">
+
+      <section class="hero paddingX">
+        <div class="hero-translate">
+          <div class="hero-title-wrapp">
+            <div class="hero-title-rect">
+              <div class="radius radius-bottom radius-left radius-transform-y"></div>
+              <div class="radius radius-top radius-right radius-transform-x"></div>
+            </div>
+            <h1 class="hero-title title up-text" split-chars>
+              FINEWORKS
+            </h1>
+          </div>
+
+          <div class="hero-img">
+            <video src="/hero-video.mp4" autoplay muted loop playsinline></video>
+            <div class="hero-scroll">
+              <span class="hero-scroll-text">SCROLL</span>
+              <div class="hero-scroll-line">
+                <div class="hero-scroll-arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="make paddingX">
+        <div class="make-main" id="make-main">
+          <div class="make-text title-h2" split-lines>GÜÇLÜ MARKALAR İÇİN</div>
+          <div class="make-text title-h2 make-text--right" id="make-text-right" split-lines style="text-align:right">ÜRETİM YAPIYORUZ</div>
+        </div>
+
+        <div class="make-gallery paddingX">
+          <div class="gallery-wrapp gallery-wrapp__left">
+            <div class="gallery-main">
+              <div class="gallery-item__rect">
+                <div class="radius radius-bottom radius-right radius-transform-y"></div>
+                <div class="radius radius-top radius-left radius-transform-x-reverse"></div>
+              </div>
+              <div class="gallery-item">
+                <img src="/12.jpg" alt="Gallery image">
+              </div>
+            </div>
+          </div>
+          <div class="gallery-wrapp gallery-wrapp__big">
+            <div class="gallery-main">
+              <div class="gallery-item__rect">
+                <div class="radius radius-top radius-left radius-transform-y-reverse"></div>
+                <div class="radius radius-bottom radius-right radius-transform-x"></div>
+              </div>
+              <div class="gallery-item">
+                <img src="/19.jpg" alt="Gallery image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about paddingX" data-about-section>
+        <div class="about-label-wrap" data-about-label>
+          <span class="about-label-dot"></span>
+          <span class="about-label">6 YILDIR</span>
+        </div>
+        <div class="about-content-row" data-about-content>
+          <h2 class="about-title title" data-about-title>ÇÖZÜM<br>ÜRETİYORUZ.</h2>
+          <div class="about-right-top" data-about-right>
+            <p class="about-text">Fine Works, markaların fiziksel dünyadaki görünümünü güçlendiren baskı ve üretim çözümleri sunar.</p>
+            <p class="about-text">Stand çözümleri, ofset kutu, etiket ve dijital baskı hizmetlerinde; tasarımdan üretime kadar markaya özel, hızlı ve kaliteli süreçler geliştiririz.</p>
+            <p class="about-text">Butik yapımızı güçlü iş ortaklarımızla birleştirerek her projeye esnek, ekonomik ve çözüm odaklı yaklaşırız.</p>
+          </div>
+        </div>
+        <div class="about-divider"></div>
+        <ul class="about-services" data-about-services>
+          <li class="about-service-item" data-service-item><span class="about-service-num">01</span><span class="about-service-name">STAND VE TEŞHİR ÇÖZÜMLERİ</span><span class="about-service-arrow">→</span></li>
+          <li class="about-service-item" data-service-item><span class="about-service-num">02</span><span class="about-service-name">OFSET KUTU ÜRETİMİ</span><span class="about-service-arrow">→</span></li>
+          <li class="about-service-item" data-service-item><span class="about-service-num">03</span><span class="about-service-name">ETİKET BASKI HİZMETLERİ</span><span class="about-service-arrow">→</span></li>
+          <li class="about-service-item" data-service-item><span class="about-service-num">04</span><span class="about-service-name">DİJİTAL BASKI ÇÖZÜMLERİ</span><span class="about-service-arrow">→</span></li>
+          <li class="about-service-item" data-service-item><span class="about-service-num">05</span><span class="about-service-name">ÖZEL ÖLÇÜ ÜRETİM</span><span class="about-service-arrow">→</span></li>
+          <li class="about-service-item" data-service-item><span class="about-service-num">06</span><span class="about-service-name">HIZLI TESLİMAT</span><span class="about-service-arrow">→</span></li>
+        </ul>
+      </section>
+
+      <section class="psd-welcome-section">
+        <div class="psd-wrapper">
+
+          <!-- Sol: Dairesel collage -->
+          <div class="collage-wrapper">
+            <div class="image-collage" data-refs-collage>
+              <div class="collage-img collage-img--1"><img src="/urun1.png" alt="Ürün 1" data-lightbox-index="0" class="collage-clickable"></div>
+              <div class="collage-img collage-img--2"><img src="/urun2.jpg" alt="Ürün 2" data-lightbox-index="1" class="collage-clickable"></div>
+              <div class="collage-img collage-img--3"><img src="/urun3.png" alt="Ürün 3" data-lightbox-index="2" class="collage-clickable"></div>
+              <div class="collage-img collage-img--4"><img src="/urun4.jpg" alt="Ürün 4" data-lightbox-index="3" class="collage-clickable"></div>
+              <div class="collage-img collage-img--5"><img src="/urun5.png" alt="Ürün 5" data-lightbox-index="4" class="collage-clickable"></div>
+              <div class="collage-img collage-img--6"><img src="/urun6.jpg" alt="Ürün 6" data-lightbox-index="5" class="collage-clickable"></div>
+              <div class="collage-img collage-img--7"><img src="/urun7.png" alt="Ürün 7" data-lightbox-index="6" class="collage-clickable"></div>
+              <div class="collage-img collage-img--8"><img src="/urun8.png" alt="Ürün 8" data-lightbox-index="7" class="collage-clickable"></div>
+              <div class="collage-img collage-img--9"><img src="/urun1.png" alt="Ürün 1" data-lightbox-index="0" class="collage-clickable"></div>
+              <div class="collage-img collage-img--10"><img src="/urun2.jpg" alt="Ürün 2" data-lightbox-index="1" class="collage-clickable"></div>
+              <div class="collage-img collage-img--11"><img src="/urun3.png" alt="Ürün 3" data-lightbox-index="2" class="collage-clickable"></div>
+              <div class="collage-img collage-img--12"><img src="/urun4.jpg" alt="Ürün 4" data-lightbox-index="3" class="collage-clickable"></div>
+              <div class="collage-img collage-img--13"><img src="/urun5.png" alt="Ürün 5" data-lightbox-index="4" class="collage-clickable"></div>
+              <div class="collage-img collage-img--14"><img src="/urun6.jpg" alt="Ürün 6" data-lightbox-index="5" class="collage-clickable"></div>
+            </div>
+          </div>
+
+          <!-- Sağ: Metin + istatistikler + marka slider -->
+          <div class="psd-text-content">
+            <div class="psd-label-wrap">
+              <span class="psd-label-dot"></span>
+              <span class="psd-label">İş Ortaklarımız</span>
+            </div>
+            <h2 class="psd-title">GÜÇLÜ<br>İŞBİRLİKLERİ.</h2>
+            <div class="psd-accent-line"></div>
+            <p class="psd-desc">Her projede üretim gücümüzü, güvenilir iş ortaklarımızla bir araya getiriyor; markalara değer katan çözümler üretiyoruz.</p>
+
+            <div class="psd-features">
+              <div class="psd-feature">
+                <div class="psd-feature-title">
+                  <span class="psd-feature-line1">Seri Üretim</span>
+                  <span class="psd-feature-line2">Gücü</span>
+                </div>
+                <p class="psd-feature-desc">Yüksek Hacimli Üretim</p>
+              </div>
+              <div class="psd-feature-sep"></div>
+              <div class="psd-feature">
+                <div class="psd-feature-title">
+                  <span class="psd-feature-line1">%100 Kalite</span>
+                  <span class="psd-feature-line2">Kontrol</span>
+                </div>
+                <p class="psd-feature-desc">Her Üründe Güvence</p>
+              </div>
+              <div class="psd-feature-sep"></div>
+              <div class="psd-feature">
+                <div class="psd-feature-title">
+                  <span class="psd-feature-line1">Hızlı Termin</span>
+                  <span class="psd-feature-line2">Süresi</span>
+                </div>
+                <p class="psd-feature-desc">Zamanında Teslimat</p>
+              </div>
+            </div>
+
+            <!-- Marka slider — satır 1: sola kayan -->
+            <div class="brand-slider-wrap">
+              <div class="brand-slider brand-slider--left" data-brand-left>
+                <div class="brand-track">
+                  <span class="brand-name">BEE'O Propolis</span>
+                  <span class="brand-name">Gratis</span>
+                  <span class="brand-name">Pastel</span>
+                  <span class="brand-name">Eczacıbaşı</span>
+                  <!-- duplicate -->
+                  <span class="brand-name">BEE'O Propolis</span>
+                  <span class="brand-name">Gratis</span>
+                  <span class="brand-name">Pastel</span>
+                  <span class="brand-name">Eczacıbaşı</span>
+                </div>
+              </div>
+              <!-- Marka slider — satır 2: sağa kayan -->
+              <div class="brand-slider brand-slider--right" data-brand-right>
+                <div class="brand-track">
+                  <span class="brand-name">Kärcher</span>
+                  <span class="brand-name">BFF Beauty Fashion Forever</span>
+                  <span class="brand-name">Tefal</span>
+                  <!-- duplicate -->
+                  <span class="brand-name">Kärcher</span>
+                  <span class="brand-name">BFF Beauty Fashion Forever</span>
+                  <span class="brand-name">Tefal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT FORM SECTION -->
+      <section class="contact-section paddingX" id="contact">
+        <div class="contact-inner">
+
+          <!-- Sol: Başlık + bilgi -->
+          <div class="contact-left">
+            <div class="contact-label-wrap">
+              <span class="contact-label-dot"></span>
+              <span class="contact-label">Projenizi Başlatalım</span>
+            </div>
+            <h2 class="contact-title">BİRLİKTE<br>ÜRETELİM.</h2>
+            <div class="contact-accent-line"></div>
+            <p class="contact-desc">Fikirlerinizi gerçeğe dönüştürmek için buradayız.<br>Projenizle ilgili detayları paylaşın,<br>size en kısa sürede dönüş yapalım.</p>
+            <div class="contact-info">
+              <div class="contact-info-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 1L13 8L7 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="contact-info-details">
+                <a href="mailto:info@fineworks.com.tr" class="contact-info-link">info@fineworks.com.tr</a>
+                <a href="tel:+902121234567" class="contact-info-link">+90 212 123 45 67</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ: Form -->
+          <div class="contact-right">
+            <form class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Adınız Soyadınız</label>
+                  <input type="text" class="form-input" placeholder="Adınızı yazın">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">E-posta Adresiniz</label>
+                  <input type="email" class="form-input" placeholder="E-posta adresinizi yazın">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Hizmet Seçin</label>
+                <div class="form-tags">
+                  <button type="button" class="form-tag">Stand ve Teşhir</button>
+                  <button type="button" class="form-tag">Ofset Kutu</button>
+                  <button type="button" class="form-tag">Etiket Baskı</button>
+                  <button type="button" class="form-tag">Dijital Baskı</button>
+                  <button type="button" class="form-tag">Özel Üretim</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Mesajınız</label>
+                <textarea class="form-textarea" placeholder="Projenizle ilgili detayları yazın..." rows="4"></textarea>
+              </div>
+
+              <div class="form-submit-row">
+                <span class="form-submit-label">MESAJI GÖNDER</span>
+                <button type="submit" class="form-submit-btn" aria-label="Gönder">
+                  <!-- Köşegen ok ↗ — görseldeki gibi -->
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-overlay" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Önceki">‹</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Sonraki">›</button>
+    <div class="lightbox-counter" id="lightboxCounter">1 / 9</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top paddingX">
+      <!-- Logo + tagline — mobilde tam genişlik -->
+      <div class="footer-brand">
+        <div class="footer-logo">FINEWORKS</div>
+        <div class="footer-tagline">STAND / DISPLAY / POP</div>
+      </div>
+
+      <!-- Nav linkleri -->
+      <nav class="footer-nav">
+        <ul class="footer-nav-col">
+          <li><a href="#" class="footer-link"><span class="footer-bullet">•</span>Anasayfa</a></li>
+          <li><a href="#" class="footer-link"><span class="footer-bullet">•</span>Kurumsal</a></li>
+          <li><a href="#" class="footer-link"><span class="footer-bullet">•</span>Çözümler</a></li>
+        </ul>
+        <ul class="footer-nav-col">
+          <li><a href="#" class="footer-link"><span class="footer-bullet">•</span>Projeler</a></li>
+          <li><a href="#" class="footer-link"><span class="footer-bullet">•</span>Blog</a></li>
+          <li><a href="#" class="footer-link"><span class="footer-bullet">•</span>İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- İletişim -->
+      <div class="footer-contact-col">
+        <a href="mailto:info@fineworks.com.tr" class="footer-contact-link">
+          <span class="footer-contact-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </span>
+          info@fineworks.com.tr
+        </a>
+        <a href="tel:+902121234567" class="footer-contact-link">
+          <span class="footer-contact-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          +90 212 123 45 67
+        </a>
+        <span class="footer-contact-link">
+          <span class="footer-contact-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          İstanbul, Türkiye
+        </span>
+      </div>
+
+      <!-- Sosyal medya — ikon yok, sadece metin + mor çizgi -->
+      <div class="footer-social-col">
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-dash">—</span>
+          Instagram
+        </a>
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-dash">—</span>
+          LinkedIn
+        </a>
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-dash">—</span>
+          Behance
+        </a>
+      </div>
+    </div>
+
+    <!-- Alt bar: mor arka plan — paddingX yok, tam genişlik -->
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Fine Works. Tüm hakları saklıdır.</span>
+      <span class="footer-slogan">Fiziksel dünyada görünür markalar üretiyoruz.</span>
+      <div class="footer-back-top">
+        <span class="footer-back-top-label">YUKARI ÇIK</span>
+        <button class="footer-back-top-btn" id="backToTop" aria-label="Yukarı çık">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBİL ALT NAVİGASYON -->
+  <nav class="mobile-bottom-nav" aria-label="Mobil navigasyon">
+    <a href="#" class="mobile-nav-item mobile-nav-item--active">
+      <span class="mobile-nav-label">Anasayfa</span>
+    </a>
+    <a href="#contact" class="mobile-nav-item">
+      <span class="mobile-nav-label">İletişim</span>
+    </a>
+  </nav>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- SplitText (GSAP Club) — trial version, works on localhost -->
+  <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
