@@ -3,6 +3,15 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "framework": "vite",
+  "rewrites": [
+    { "source": "/kurumsal", "destination": "/kurumsal.html" },
+    { "source": "/stand-ve-teshir", "destination": "/stand-ve-teshir.html" },
+    { "source": "/ofset-kutu", "destination": "/ofset-kutu.html" },
+    { "source": "/etiket-baski", "destination": "/etiket-baski.html" },
+    { "source": "/dijital-baski", "destination": "/dijital-baski.html" },
+    { "source": "/ozel-uretim", "destination": "/ozel-uretim.html" },
+    { "source": "/hizli-teslimat", "destination": "/hizli-teslimat.html" }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

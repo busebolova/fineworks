@@ -1,0 +1,379 @@
+/* =====================
+   KURUMSAL SAYFA — STICKY LAYOUT
+   ===================== */
+
+.corp-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: var(--beige);
+}
+
+/* ── Breadcrumb ── */
+.corp-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+/* ── Sticky Wrapper ── */
+.corp-sticky-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  align-items: start;
+  gap: 0;
+  min-height: 100vh;
+}
+
+/* ── Sol: Sticky Panel ── */
+.corp-sticky-left {
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: flex-start;
+  border-right: 1px solid rgba(0,0,0,0.07);
+  padding-right: 0.5rem;
+}
+
+.corp-sticky-inner {
+  padding-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.corp-big-title {
+  font-family: var(--headline-font);
+  font-size: clamp(64px, 9vw, 1.4rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+  margin-top: 0.12rem;
+}
+
+.corp-sticky-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.corp-meta-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.1rem;
+}
+
+.corp-meta-num {
+  font-family: var(--headline-font);
+  font-size: clamp(22px, 3vw, 0.42rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.corp-meta-label {
+  font-family: var(--main-font);
+  font-size: clamp(11px, 1vw, 0.11rem);
+  font-weight: 400;
+  color: rgba(0,0,0,0.4);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── Sağ: Scroll İçerik ── */
+.corp-scroll-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── İçerik Blokları ── */
+.corp-block {
+  padding: 0.65rem 0 0.65rem 0.55rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.corp-block:first-child {
+  padding-top: 0.6rem;
+}
+
+.corp-block-label {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.corp-block-num {
+  font-family: var(--main-font);
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.22);
+  letter-spacing: 0.04em;
+}
+
+.corp-block-tag {
+  font-family: var(--main-font);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.corp-block-title {
+  font-family: var(--headline-font);
+  font-size: clamp(32px, 5vw, 0.72rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 0.2rem;
+}
+
+.corp-block-divider {
+  width: 36px;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 0.28rem;
+}
+
+.corp-block-text {
+  font-family: var(--main-font);
+  font-size: clamp(14px, 1.5vw, 0.155rem);
+  font-weight: 400;
+  color: rgba(0,0,0,0.58);
+  line-height: 1.82;
+  letter-spacing: -0.002rem;
+  margin-bottom: 0.14rem;
+}
+
+.corp-block-text:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Feature List (Neden Biz) ── */
+.corp-feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.corp-feature-item {
+  display: flex;
+  gap: 0.16rem;
+  padding: 0.22rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  align-items: flex-start;
+}
+
+.corp-feature-num {
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: var(--accent);
+  flex-shrink: 0;
+  padding-top: 2px;
+  min-width: 16px;
+}
+
+.corp-feature-name {
+  display: block;
+  font-family: var(--headline-font);
+  font-size: clamp(15px, 1.8vw, 0.22rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  margin-bottom: 5px;
+}
+
+.corp-feature-desc {
+  font-family: var(--main-font);
+  font-size: clamp(13px, 1.3vw, 0.135rem);
+  font-weight: 400;
+  color: rgba(0,0,0,0.55);
+  line-height: 1.65;
+}
+
+/* ── Marka Listesi ── */
+.corp-brands-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.corp-brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.18rem 0.06rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  transition: background 0.3s ease, padding-left 0.3s ease;
+  cursor: default;
+}
+
+.corp-brand-row:hover {
+  background: rgba(0,0,0,0.018);
+  padding-left: 0.1rem;
+}
+
+.corp-brand-name {
+  font-family: var(--headline-font);
+  font-size: clamp(18px, 2.5vw, 0.32rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.corp-brand-row:hover .corp-brand-name {
+  color: rgba(0,0,0,0.65);
+}
+
+.corp-brand-arrow {
+  font-size: clamp(13px, 1.3vw, 0.14rem);
+  color: rgba(0,0,0,0.18);
+  transition: color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.corp-brand-row:hover .corp-brand-arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* ── Hizmet Listesi ── */
+.corp-services-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.corp-service-row {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.18rem 0.06rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  text-decoration: none;
+  color: var(--black);
+  transition: background 0.3s ease, padding-left 0.3s ease;
+}
+
+.corp-service-row:hover {
+  background: rgba(0,0,0,0.018);
+  padding-left: 0.1rem;
+}
+
+.corp-service-num {
+  font-family: var(--main-font);
+  font-size: 10px;
+  color: rgba(0,0,0,0.25);
+  min-width: 22px;
+  flex-shrink: 0;
+}
+
+.corp-service-name {
+  font-family: var(--headline-font);
+  font-size: clamp(16px, 2.5vw, 0.32rem);
+  font-weight: 500;
+  color: var(--black);
+  flex: 1;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.corp-service-row:hover .corp-service-name {
+  color: rgba(0,0,0,0.65);
+}
+
+.corp-service-arrow {
+  font-size: clamp(13px, 1.3vw, 0.14rem);
+  color: rgba(0,0,0,0.18);
+  transition: color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.corp-service-row:hover .corp-service-arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .corp-sticky-wrap {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .corp-big-title {
+    font-size: clamp(52px, 7vw, 90px);
+  }
+}
+
+@media (max-width: 768px) {
+  .corp-page {
+    padding-top: 60px;
+  }
+
+  .corp-sticky-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .corp-sticky-left {
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    padding-right: 0;
+    padding-bottom: 0.4rem;
+  }
+
+  .corp-sticky-inner {
+    padding-top: 0.4rem;
+    width: 100%;
+  }
+
+  .corp-big-title {
+    font-size: clamp(48px, 13vw, 80px);
+  }
+
+  .corp-sticky-meta {
+    flex-direction: row;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+  }
+
+  .corp-block {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .corp-page {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .corp-big-title {
+    font-size: clamp(40px, 12vw, 64px);
+  }
+
+  .corp-block-title {
+    font-size: clamp(28px, 9vw, 44px);
+  }
+
+  .corp-brand-name,
+  .corp-service-name {
+    font-size: clamp(15px, 4.5vw, 22px);
+  }
+
+  .corp-feature-name {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+}
