@@ -35,10 +35,20 @@
   <!-- ── Tema rengi (mobil tarayıcı) ── -->
   <meta name="theme-color" content="#fffdf4" />
 
-  <!-- Google Fonts: Inter -->
+  <!-- DNS prefetch — CDN'ler için -->
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://api.fontshare.com" />
+
+  <!-- Preconnect — kritik kaynaklar -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+
+  <!-- Google Fonts: Inter — display=swap ile non-blocking -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <!-- General Sans via Fontshare -->
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap" rel="stylesheet" />
 
@@ -466,10 +476,10 @@
     </a>
   </nav>
 
-  <!-- GSAP 3.13+ (SplitText artık ücretsiz) -->
+  <!-- GSAP 3.13+ — body sonunda, sıralı yükleme -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
