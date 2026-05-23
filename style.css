@@ -2012,6 +2012,18 @@ input[type=number] {
 /* =====================
    SERVICE LIST — PREMIUM
    ===================== */
+
+/* Servis item link wrapper */
+.about-service-link {
+  display: flex;
+  align-items: center;
+  gap: 0.18rem;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .about-services {
   list-style: none;
   display: flex;
