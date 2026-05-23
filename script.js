@@ -1,5 +1,5 @@
 // ── GSAP setup ───────────────────────────────────────────────────
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 gsap.config({ trialWarn: false });
 
 // ── Yukarı çık butonu ────────────────────────────────────────────
