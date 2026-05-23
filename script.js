@@ -262,20 +262,19 @@ function init() {
     duration: 0.8,
   }, '<0.2');
 
-  if (!isMobile) {
-    tl.to('.make', { opacity: 1, duration: 0 }, '<')
-    .fromTo('.make-text .split-line', {
-      scaleY: 0,
-      opacity: 0,
-    }, {
-      scaleY: 1,
-      opacity: 1,
-      ease: 'sine.out',
-      transformOrigin: 'top',
-      stagger: 0.05,
-      duration: 0.5,
-    }, '<0.1');
-  }
+  // Make section — hem masaüstü hem mobilde animasyon
+  tl.to('.make', { opacity: 1, duration: 0 }, '<')
+  .fromTo('.make-text .split-line', {
+    scaleY: 0,
+    opacity: 0,
+  }, {
+    scaleY: 1,
+    opacity: 1,
+    ease: 'sine.out',
+    transformOrigin: 'top',
+    stagger: 0.05,
+    duration: 0.5,
+  }, '<0.1');
 
   tl.call(function () {
     document.body.classList.remove('overflow-hidden');
@@ -368,21 +367,19 @@ function init() {
       .fromTo('.gallery-main', { width: 0 }, { width: '100%', ease: 'none', duration: 0.5 })
       .fromTo('.gallery-main .radius', { width: 0, height: 0 }, { width: '10px', height: '10px', ease: 'none', duration: 0.05 }, '<');
   } else {
-    // Mobilde make-text'i hemen göster, galeri animasyonu yok
-    gsap.set('.make-text .split-line', { scaleY: 1, opacity: 1 });
-
-    // Mobilde make-main flex column yap
+    // Mobilde make-main ortalanmış tek satır
     var makeMain = document.querySelector('.make-main');
     if (makeMain) {
       makeMain.style.setProperty('display', 'flex', 'important');
-      makeMain.style.setProperty('flex-direction', 'column', 'important');
+      makeMain.style.setProperty('justify-content', 'center', 'important');
+      makeMain.style.setProperty('align-items', 'center', 'important');
       makeMain.style.setProperty('grid-template-columns', 'unset', 'important');
     }
 
-    // Mobilde TÜM make-text elementlerini sola hizala
+    // Mobilde make-text ortala
     var makeTexts = document.querySelectorAll('.make-text');
     makeTexts.forEach(function(el) {
-      el.style.setProperty('text-align', 'left', 'important');
+      el.style.setProperty('text-align', 'center', 'important');
       el.style.setProperty('width', '100%', 'important');
     });
 
@@ -394,7 +391,6 @@ function init() {
     }
 
     // Mobilde galeri — GSAP clearProps ile tüm inline style'ları temizle
-    // sonra CSS !important kuralları devreye girer
     gsap.set('.gallery-main', { clearProps: 'all' });
     gsap.set('.gallery-wrapp__big', { clearProps: 'all' });
     gsap.set('.gallery-wrapp__big .gallery-main', { clearProps: 'all' });
@@ -538,16 +534,17 @@ function init() {
 
   // Mobil düzeltmeleri — init() sonunda uygula
   if (isMobile) {
-    // make-text sola hizala (SplitText işleminden sonra)
+    // make-text ortala (SplitText işleminden sonra)
     document.querySelectorAll('.make-text').forEach(function(el) {
-      el.style.setProperty('text-align', 'left', 'important');
+      el.style.setProperty('text-align', 'center', 'important');
       el.style.setProperty('width', '100%', 'important');
     });
-    // make-main flex column
+    // make-main flex center
     var mm = document.querySelector('.make-main');
     if (mm) {
       mm.style.setProperty('display', 'flex', 'important');
-      mm.style.setProperty('flex-direction', 'column', 'important');
+      mm.style.setProperty('justify-content', 'center', 'important');
+      mm.style.setProperty('align-items', 'center', 'important');
       mm.style.setProperty('grid-template-columns', 'unset', 'important');
     }
 
@@ -570,17 +567,15 @@ function start() {
   gsap.set('.header-item', { y: -20, opacity: 0 });
   gsap.set('.hero-img', { opacity: 0 });
 
+  // Make section başlangıç durumu — hem masaüstü hem mobilde animasyon için opacity:0
+  gsap.set('.make', { opacity: 0 });
+  gsap.set('.make-text .split-line', { scaleY: 0, opacity: 0, transformOrigin: 'top' });
+
   if (!isMobileStart) {
-    gsap.set('.make', { opacity: 0 });
-    gsap.set('.make-text .split-line', { scaleY: 0, opacity: 0, transformOrigin: 'top' });
     // Masaüstünde galeri başlangıçta gizli (GSAP scroll animasyonla açılır)
     gsap.set('.gallery-main', { width: 0 });
   } else {
-    // Mobilde make section'ı hemen görünür yap
-    gsap.set('.make', { opacity: 1 });
-    gsap.set('.make-text .split-line', { scaleY: 1, opacity: 1 });
     // Mobilde galeri: GSAP hiç dokunmasın, CSS !important kuralları geçerli
-    // gallery-main'e width:0 set etme — clearProps ile temizle
     gsap.set('.gallery-main', { clearProps: 'width,height' });
   }
 

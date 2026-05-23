@@ -1,0 +1,362 @@
+/* =====================
+   SERVICE PAGE — ORTAK STİLLER
+   ===================== */
+
+.service-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: var(--beige);
+}
+
+/* Hero */
+.sp-hero {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.sp-hero-inner {
+  max-width: 900px;
+}
+
+.sp-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.3rem;
+}
+
+.sp-breadcrumb-link {
+  font-family: var(--main-font);
+  font-size: 12px;
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sp-breadcrumb-link:hover {
+  color: var(--accent);
+}
+
+.sp-breadcrumb-sep {
+  font-size: 11px;
+  color: rgba(0,0,0,0.25);
+}
+
+.sp-breadcrumb-current {
+  font-family: var(--main-font);
+  font-size: 12px;
+  color: rgba(0,0,0,0.55);
+}
+
+.sp-label-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.06rem;
+  margin-bottom: 0.2rem;
+}
+
+.sp-label-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.sp-label {
+  font-family: var(--main-font);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sp-title {
+  font-family: var(--headline-font);
+  font-size: clamp(48px, 7vw, 0.95rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+
+.sp-accent-line {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.sp-desc {
+  font-family: var(--main-font);
+  font-size: clamp(14px, 1.5vw, 0.155rem);
+  font-weight: 400;
+  color: rgba(0,0,0,0.58);
+  line-height: 1.75;
+  max-width: 600px;
+}
+
+/* İçerik */
+.sp-content {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.sp-content-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.sp-section-title {
+  font-family: var(--headline-font);
+  font-size: clamp(20px, 2.5vw, 0.32rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.35rem;
+}
+
+.sp-feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.sp-feature-item {
+  display: flex;
+  gap: 0.18rem;
+  padding: 0.22rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  align-items: flex-start;
+}
+
+.sp-feature-num {
+  font-family: var(--main-font);
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.25);
+  letter-spacing: 0.04em;
+  min-width: 24px;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.sp-feature-text strong {
+  display: block;
+  font-family: var(--headline-font);
+  font-size: clamp(16px, 2vw, 0.22rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+.sp-feature-text p {
+  font-family: var(--main-font);
+  font-size: clamp(13px, 1.3vw, 0.135rem);
+  font-weight: 400;
+  color: rgba(0,0,0,0.55);
+  line-height: 1.65;
+}
+
+/* Info box */
+.sp-info-box {
+  background: rgba(0,0,0,0.025);
+  border: 1px solid rgba(0,0,0,0.07);
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sp-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.sp-info-item:last-child {
+  border-bottom: none;
+}
+
+.sp-info-label {
+  font-family: var(--main-font);
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.35);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sp-info-value {
+  font-family: var(--main-font);
+  font-size: clamp(13px, 1.3vw, 0.135rem);
+  font-weight: 400;
+  color: var(--black);
+}
+
+/* Diğer hizmetler */
+.sp-other {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.sp-other-title {
+  font-family: var(--headline-font);
+  font-size: clamp(18px, 2vw, 0.26rem);
+  font-weight: 500;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.sp-other-grid {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+.sp-other-item {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.15rem 0.06rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  text-decoration: none;
+  color: var(--black);
+  transition: background 0.3s ease, padding-left 0.3s ease;
+}
+
+.sp-other-item:hover {
+  background: rgba(0,0,0,0.018);
+  padding-left: 0.1rem;
+}
+
+.sp-other-num {
+  font-family: var(--main-font);
+  font-size: 10px;
+  color: rgba(0,0,0,0.25);
+  min-width: 22px;
+  flex-shrink: 0;
+}
+
+.sp-other-name {
+  font-family: var(--headline-font);
+  font-size: clamp(16px, 2.5vw, 0.3rem);
+  font-weight: 500;
+  color: var(--black);
+  flex: 1;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.sp-other-item:hover .sp-other-name {
+  color: rgba(0,0,0,0.65);
+}
+
+.sp-other-arrow {
+  font-size: clamp(14px, 1.5vw, 0.16rem);
+  color: rgba(0,0,0,0.2);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sp-other-item:hover .sp-other-arrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* CTA */
+.sp-cta {
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+  background: #0a0a0a;
+}
+
+.sp-cta-inner {
+  max-width: 600px;
+}
+
+.sp-cta-title {
+  font-family: var(--headline-font);
+  font-size: clamp(32px, 5vw, 0.65rem);
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.12rem;
+}
+
+.sp-cta-desc {
+  font-family: var(--main-font);
+  font-size: clamp(14px, 1.4vw, 0.14rem);
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
+  margin-bottom: 0.3rem;
+}
+
+.sp-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--main-font);
+  font-size: clamp(12px, 1.2vw, 0.12rem);
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.12rem 0.28rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.sp-cta-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-page {
+    padding-top: 60px;
+  }
+
+  .sp-content-grid {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .sp-title {
+    font-size: clamp(36px, 11vw, 56px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sp-hero {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .sp-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .sp-other {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .sp-cta {
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+  }
+}

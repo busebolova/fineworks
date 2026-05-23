@@ -755,6 +755,19 @@ input[type=number] {
   margin-top: 10px;
 }
 
+.make-main--single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: unset;
+  text-align: center;
+}
+
+.make-main--single .make-text {
+  text-align: center !important;
+  width: 100%;
+}
+
 /* Masaüstünde ikinci make-text sağa hizalı — mobilde override edilir */
 
 .make-text .split-line {
@@ -2265,8 +2278,8 @@ input[type=number] {
   .make-gallery {
     display: flex !important;
     position: relative !important;
-    height: 52vw !important;
-    max-height: 240px !important;
+    height: 56vw !important;
+    max-height: 260px !important;
     padding: 16px 0 0 0 !important;
     justify-content: center !important;
     align-items: stretch !important;
@@ -2281,6 +2294,7 @@ input[type=number] {
   }
 
   .gallery-wrapp__big {
+    display: block !important;
     width: 100% !important;
     height: 100% !important;
     margin-top: 0 !important;
@@ -2292,9 +2306,11 @@ input[type=number] {
     width: 100% !important;
     height: 100% !important;
     margin-left: 0 !important;
+    overflow: visible !important;
   }
 
   .gallery-wrapp__big .gallery-item {
+    display: block !important;
     margin-left: 0 !important;
     width: 100% !important;
     height: 100% !important;
@@ -2784,6 +2800,47 @@ input[type=number] {
   }
 
   .make-gallery {
+    display: flex !important;
+    position: relative !important;
+    height: 50vw !important;
+    max-height: 280px !important;
+    padding: 16px 0 0 0 !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-wrapp__left {
+    display: none !important;
+  }
+
+  .gallery-wrapp__big {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    max-height: none !important;
+  }
+
+  .gallery-wrapp__big .gallery-main {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .gallery-wrapp__big .gallery-item {
+    display: block !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 8px !important;
+  }
+
+  .gallery-wrapp__big .gallery-item__rect {
     display: none !important;
   }
 
