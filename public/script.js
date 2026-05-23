@@ -1,6 +1,5 @@
 // ── GSAP setup ───────────────────────────────────────────────────
 gsap.registerPlugin(ScrollTrigger, SplitText);
-gsap.config({ trialWarn: false });
 
 // ── Yukarı çık butonu ────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function() {
